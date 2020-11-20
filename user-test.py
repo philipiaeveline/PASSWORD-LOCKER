@@ -1,7 +1,7 @@
 import unittest
 from user import User
 class TestUser(unittest.TestCase):
-    
+
     def setUp(self):
         """
         Set up method to run before each test cases.
@@ -31,7 +31,7 @@ class TestUser(unittest.TestCase):
         self.new_user.save_user_details()  # saving the new user
         self.assertEqual(len(User.user_array), 1)
 
-    def test_save_multiple_useelf):
+    def test_save_multiple_user(self):
         """
         test_save_multiple_users to check if we can save multiple users
         to our users_array
@@ -51,9 +51,9 @@ class TestUser(unittest.TestCase):
     #     self.new_user.delete_user()  # Deleting a user object
     #     self.assertEqual(len(User.user_array), 1)
 
-    def test_display_all_users(self):
+    def test_display_all_user(self):
         """
-        method that returns a list of all users saved
+        method that returns a list of all user saved
         """
         self.assertEqual(User.display_user(), User.user_array)
 if __name__ == '__main__':

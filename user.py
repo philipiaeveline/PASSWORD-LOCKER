@@ -18,7 +18,7 @@ class User:
         User.user_array.append(self)
 
     @classmethod
-    def display_users(cls):
+    def display_user(cls):
         """
         method that returns the class array
         """
