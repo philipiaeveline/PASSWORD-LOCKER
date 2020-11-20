@@ -1,22 +1,43 @@
-class Credential:
-    """
-    a class that generates new credential for users
-    """
-    pass
-    credential_array = []
-    def __init__(self, user_name, password, email):
-        self.user_name = user_name
-        self.password = password
-        self.email = email
-    def save_credential(self):
+import unittest
+from credential import Credential
+
+
+class TestUser(unittest.TestCase):
+
+    def setUp(self):
         """
-        save_contact method saves credentials objects into credential_array
+        Set up method to run before each test cases.
         """
-        Credential.credential_array.append(self)
-    @classmethod
-    def display_credential(cls):
+        self.new_credential = Credential("user_name", "password", "email@ms.com")  # create credential object
+
+    def tearDown(self):
         """
-        method that returns the credential list
-        method that returns the credential array
+        tearDown method that does clean up after each test case has run.
         """
-        return cls.credential_array
+        Credential.credential_array = []
+
+    def test_init(self):
+        """
+        test_init test case to test if the object is properly initialized
+        """
+        self.assertEqual(self.new_credential.user_name, "user_name")
+        self.assertEqual(self.new_credential.password, "password")
+        self.assertEqual(self.new_credential.email, "email@ms.com")
+
+    def test_save_cred(self):
+        """
+        test_save_cred test case to test if the credential object is saved into
+         the credentials array
+        """
+        self.new_credential.save_credential()  # save the new credential
+        self.assertEqual(len(Credential.credential_array), 1)
+
+    def test_display_credentials(self):
+        """
+        method that returns a list of saved credentials
+        """
+        self.assertEqual(Credential.display_credential(), Credential.credential_array)
+
+
+if __name__ == '__main__':
+    unittest.main()
