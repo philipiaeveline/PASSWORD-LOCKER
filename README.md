@@ -14,7 +14,7 @@ At the terminal, run the following command:
   
   | Given                 | When                       | Then                              |
   | ----------------------|:--------------------------:|:---------------------------------:|
-  | allowed actions       | a user types in the action | the program fulfils the action    |
+  | creat-account        | new password and user name| the program fulfils the action    |
  
 ## Built With
 * PyCharm - The text editor used
