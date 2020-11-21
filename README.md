@@ -30,7 +30,7 @@ At the terminal, run the following command:
 Any contributions to this projects will be greatly appreciated. If you want to contribute to it, here are the suggested instructions:
 * Clone this GitHub repository to your local machine.
 ```buildoutcfg
-ghttps://github.com/philipiaeveline/Password-Locker
+  ghttps://github.com/philipiaeveline/Password-Locker
 ```
 * Make your contributions.
 * Email me the zipped project at philipiaeveline13@gmail.com , or
