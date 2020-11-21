@@ -7,7 +7,7 @@ To run the program, link all classes to the run file and use the following code 
 #!/usr/bin/env python3.7
 ```
 At the terminal, run the following command:
-```buildoutcfg
+
 ./run.py
 ``` 
 ## Behavior Driven Development
