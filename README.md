@@ -19,7 +19,7 @@ At the terminal, run the following command:
 ## Built With
 * PyCharm - The text editor used
 * Git - The version control environment Used
-* Bootstrap
+
 ## Technologies Used
 
 * Python
@@ -39,7 +39,7 @@ Alternatively, you could email the main developer at philipiaeveline13@gmail.com
 ## Versioning
 Used GIT and GitHub. There are commits attached to the entire project to show the management of versions.
 ## Authors
- Cyprian Munene, any other contributor after the completion of the work can be viewed at this GitHub repository
+ Cyprian PHILIPIA EVELINE, any other contributor after the completion of the work can be viewed at this GitHub repository
 ## Copyright
 All Rights Reserved by [@philipiaeveline13](https://github.com/philipiaeveline/Password-Locker)
 Other GitHub can however fork or clone this repository provided the necessary credit is given to the original author
