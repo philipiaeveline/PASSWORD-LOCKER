@@ -223,7 +223,7 @@ if __name__ == "__main__":
             else:
                 print("No such an account name")
         elif shortCode == 'exit':
-            print("Welcome once again")
+            print("Thank You So Much.Welcome once again")
             isTrue = False
         else:
             print("invalid short code")
